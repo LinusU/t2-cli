@@ -7,7 +7,6 @@ function TesselSimulator() {
 
   tessel.connection = {
     exec: function(command, callback) {
-
       if (!Array.isArray(command)) {
         throw new Error('Invalid command passed to exec.');
       }
